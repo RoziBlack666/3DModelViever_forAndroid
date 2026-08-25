@@ -35,6 +35,10 @@ public class MainMenuController : MonoBehaviour
     {
         ChangeActivePanelSettings();
     }
+    public void OnClickButStart()
+    {
+        OpenGallery();
+    }
 
 
     public void ChangeActivePanelInfo()

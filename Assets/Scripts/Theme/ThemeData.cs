@@ -6,6 +6,8 @@ using UnityEngine;
 )]
 public class ThemeData : ScriptableObject
 {
+    public string ThemeName;
+
     [Header("Основные цвета")]
     public Color Base;
 

@@ -49,8 +49,8 @@ public class MainMenuController : MonoBehaviour
         }
         else 
         {
-            OpenInfo();
             CloseSettings();
+            OpenInfo();
         }
     }
     public void ChangeActivePanelSettings()
@@ -61,8 +61,8 @@ public class MainMenuController : MonoBehaviour
         }
         else
         {
-            OpenSettings();
             CloseInfo();
+            OpenSettings();
         }
 
     }

@@ -7,10 +7,10 @@ public class ThemeUIElement : MonoBehaviour
     public enum ThemeColorType
     {
         Base,
-        InactiveButton,
-        ActiveButton,
-        InactiveSmallButton,
-        ActiveSmallButton,
+        DisabledButton,
+        EnabledButton,
+        DisabledSmallButton,
+        EnabledSmallButton,
         ImageInMenuBase,
         ImageInMenuForPanel,
         ImageInGallery,
@@ -23,7 +23,7 @@ public class ThemeUIElement : MonoBehaviour
     [SerializeField] private ThemeColorType colorType;
 
     [Header("Состояние кнопки")]
-    [SerializeField] private bool isActive;
+    [SerializeField] private bool isEnabled;
 
     private Image image;
     private TMP_Text text;
@@ -61,17 +61,17 @@ public class ThemeUIElement : MonoBehaviour
             case ThemeColorType.Base:
                 return theme.Base;
 
-            case ThemeColorType.InactiveButton:
-                return theme.InactiveBut;
+            case ThemeColorType.DisabledButton:
+                return theme.DisabledBut;
 
-            case ThemeColorType.ActiveButton:
-                return theme.ActiveBut;
+            case ThemeColorType.EnabledButton:
+                return theme.EnabledBut;
 
-            case ThemeColorType.InactiveSmallButton:
-                return theme.InactiveBitBut;
+            case ThemeColorType.DisabledSmallButton:
+                return theme.DisabledBitBut;
 
-            case ThemeColorType.ActiveSmallButton:
-                return theme.ActiveBitBut;
+            case ThemeColorType.EnabledSmallButton:
+                return theme.EnabledBitBut;
 
             case ThemeColorType.ImageInMenuBase:
                 return theme.ImageInMenuBase;
@@ -99,16 +99,15 @@ public class ThemeUIElement : MonoBehaviour
 
     public void ToggleButtonState(ThemeData theme)
     {
-        isActive = !isActive;
+        isEnabled = !isEnabled;
 
         ApplyButtonState(theme);
     }
 
 
-    public void SetButtonState(bool active, ThemeData theme)
+    public void SetButtonState(bool enabled, ThemeData theme)
     {
-        isActive = active;
-
+        isEnabled = enabled;
         ApplyButtonState(theme);
     }
 
@@ -120,28 +119,28 @@ public class ThemeUIElement : MonoBehaviour
 
         Color color;
 
-        if (isActive)
+        if (isEnabled)
         {
-            if (colorType == ThemeColorType.InactiveSmallButton ||
-                colorType == ThemeColorType.ActiveSmallButton)
+            if (colorType == ThemeColorType.DisabledSmallButton ||
+                colorType == ThemeColorType.EnabledSmallButton)
             {
-                color = theme.ActiveBitBut;
+                color = theme.EnabledBitBut;
             }
             else
             {
-                color = theme.ActiveBut;
+                color = theme.EnabledBut;
             }
         }
         else
         {
-            if (colorType == ThemeColorType.InactiveSmallButton ||
-                colorType == ThemeColorType.ActiveSmallButton)
+            if (colorType == ThemeColorType.DisabledSmallButton ||
+                colorType == ThemeColorType.EnabledSmallButton)
             {
-                color = theme.InactiveBitBut;
+                color = theme.DisabledBitBut;
             }
             else
             {
-                color = theme.InactiveBut;
+                color = theme.DisabledBut;
             }
         }
 
@@ -151,5 +150,5 @@ public class ThemeUIElement : MonoBehaviour
         }
     }
 
-    public bool IsActive => isActive;
+    public bool IsEnabled => isEnabled;
 }

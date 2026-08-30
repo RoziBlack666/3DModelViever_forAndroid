@@ -12,12 +12,12 @@ public class ThemeData : ScriptableObject
     public Color Base;
 
     [Header("Кнопки")]
-    public Color InactiveBut;
-    public Color ActiveBut;
+    public Color DisabledBut;
+    public Color EnabledBut;
 
     [Header("Маленькие кнопки")]
-    public Color InactiveBitBut;
-    public Color ActiveBitBut;
+    public Color DisabledBitBut;
+    public Color EnabledBitBut;
 
     [Header("Узоры")]
     public Color ImageInMenuBase;

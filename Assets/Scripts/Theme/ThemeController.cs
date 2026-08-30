@@ -1,6 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ThemeController : MonoBehaviour
 {
@@ -54,14 +52,14 @@ public class ThemeController : MonoBehaviour
     }
 
 
-    public void SetButtonActive(ThemeUIElement button)
+    public void SetButtonEnabled(ThemeUIElement button)
     {
         if (button == null)
             return;
 
-        button.SetButtonState(true, CurrentTheme);
+        button.SetButtonState(true, CurrentTheme);        
     }
-    public void SetButtonInactive(ThemeUIElement button)
+    public void SetButtonDisabled(ThemeUIElement button)
     {
         if (button == null)
             return;

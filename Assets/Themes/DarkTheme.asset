@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: DarkTheme
   m_EditorClassIdentifier: Assembly-CSharp::ThemeData
   ThemeName: DarkTheme
-  Base: {r: 0, g: 0, b: 0, a: 0}
-  InactiveBut: {r: 0, g: 0, b: 0, a: 0}
-  ActiveBut: {r: 0, g: 0, b: 0, a: 0}
-  InactiveBitBut: {r: 0, g: 0, b: 0, a: 0}
-  ActiveBitBut: {r: 0, g: 0, b: 0, a: 0}
-  ImageInMenu: {r: 0, g: 0, b: 0, a: 0}
-  ImageInGallery: {r: 0, g: 0, b: 0, a: 0}
-  Text: {r: 0, g: 0, b: 0, a: 0}
-  Gallery: {r: 0, g: 0, b: 0, a: 0}
-  PanelThatOpens: {r: 0, g: 0, b: 0, a: 0}
+  Base: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  DisabledBut: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+  EnabledBut: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  DisabledBitBut: {r: 0.03137255, g: 0.03137255, b: 0.03137255, a: 1}
+  EnabledBitBut: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  ImageInMenuBase: {r: 0.2, g: 0.2, b: 0.2, a: 0.4}
+  ImageInMenuForPanel: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
+  ImageInGallery: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 0.4}
+  Text: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  Gallery: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 1}
+  PanelThatOpens: {r: 0.1, g: 0.1, b: 0.1, a: 1}

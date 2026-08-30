@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,12 +25,12 @@ public class ThemeUIElement : MonoBehaviour
     [SerializeField] private bool isEnabled;
 
     private Image image;
-    private TMP_Text text;
+    private Text text;
 
     private void Awake()
     {
         image = GetComponent<Image>();
-        text = GetComponent<TMP_Text>();
+        text = GetComponent<Text>();
     }
 
 

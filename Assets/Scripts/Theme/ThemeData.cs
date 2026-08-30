@@ -20,7 +20,8 @@ public class ThemeData : ScriptableObject
     public Color ActiveBitBut;
 
     [Header("Узоры")]
-    public Color ImageInMenu;
+    public Color ImageInMenuBase;
+    public Color ImageInMenuForPanel;
     public Color ImageInGallery;
 
     [Header("Текст")]

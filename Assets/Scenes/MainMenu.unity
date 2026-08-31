@@ -299,6 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195413879}
   - component: {fileID: 195413880}
+  - component: {fileID: 195413881}
   m_Layer: 5
   m_Name: ToggleDarkTheme
   m_TagString: Untagged
@@ -370,22 +371,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1781032460}
   toggleTransition: 1
   graphic: {fileID: 684299576}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1258877136}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 205498008}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: OnClickToggle
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 195413878}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1277934038}
         m_TargetAssemblyTypeName: ThemeManager, Assembly-CSharp
         m_MethodName: SetTheme
@@ -398,7 +387,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 195413881}
+        m_TargetAssemblyTypeName: ThemeToggle, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &195413881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195413878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713260dadf7cc3a499cf0dbd4429be42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThemeToggle
+  toggle: {fileID: 0}
+  theme: {fileID: 11400000, guid: 3fd7bba1e5f28cf4eba357a0c884a9c6, type: 2}
 --- !u!1 &205498006
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464782912}
   - component: {fileID: 464782913}
+  - component: {fileID: 464782914}
   m_Layer: 5
   m_Name: ToggleMyTheme
   m_TagString: Untagged
@@ -714,22 +730,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 570896366}
   toggleTransition: 1
   graphic: {fileID: 796163231}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1258877136}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 205498008}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: OnClickToggle
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 464782911}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1277934038}
         m_TargetAssemblyTypeName: ThemeManager, Assembly-CSharp
         m_MethodName: SetTheme
@@ -742,7 +746,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 464782914}
+        m_TargetAssemblyTypeName: ThemeToggle, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &464782914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464782911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713260dadf7cc3a499cf0dbd4429be42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThemeToggle
+  toggle: {fileID: 0}
+  theme: {fileID: 11400000, guid: 4b49d52095350304882c8513aaa14667, type: 2}
 --- !u!1 &491002699
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491002700}
   - component: {fileID: 491002701}
+  - component: {fileID: 491002702}
   m_Layer: 5
   m_Name: ToggleBlueTheme
   m_TagString: Untagged
@@ -824,22 +855,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 645555271}
   toggleTransition: 1
   graphic: {fileID: 1025070151}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1258877136}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 205498008}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: OnClickToggle
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 491002699}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1277934038}
         m_TargetAssemblyTypeName: ThemeManager, Assembly-CSharp
         m_MethodName: SetTheme
@@ -852,7 +871,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 491002702}
+        m_TargetAssemblyTypeName: ThemeToggle, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
+--- !u!114 &491002702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491002699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713260dadf7cc3a499cf0dbd4429be42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThemeToggle
+  toggle: {fileID: 0}
+  theme: {fileID: 11400000, guid: ed2eb954eb7c59a41be36212d8b77d46, type: 2}
 --- !u!1 &503384859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +2852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959121658}
   - component: {fileID: 959121659}
+  - component: {fileID: 959121660}
   m_Layer: 5
   m_Name: ToggleLightTheme
   m_TagString: Untagged
@@ -2878,22 +2924,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67687794}
   toggleTransition: 1
   graphic: {fileID: 1906696015}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1258877136}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 205498008}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: OnClickToggle
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 959121657}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1277934038}
         m_TargetAssemblyTypeName: ThemeManager, Assembly-CSharp
         m_MethodName: SetTheme
@@ -2906,7 +2940,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 959121660}
+        m_TargetAssemblyTypeName: ThemeToggle, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &959121660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959121657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713260dadf7cc3a499cf0dbd4429be42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThemeToggle
+  toggle: {fileID: 0}
+  theme: {fileID: 11400000, guid: 729670c7d433bc74b91e8f920646cee2, type: 2}
 --- !u!1 &1025070149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,8 +3890,9 @@ GameObject:
   - component: {fileID: 1258877133}
   - component: {fileID: 1258877135}
   - component: {fileID: 1258877134}
+  - component: {fileID: 1258877136}
   m_Layer: 5
-  m_Name: Content
+  m_Name: ToggleGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3900,6 +3961,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1258877136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258877132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
+  m_AllowSwitchOff: 0
 --- !u!1 &1277934037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,9 +4004,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThemeManager
   themes:
-  - {fileID: 11400000, guid: ed2eb954eb7c59a41be36212d8b77d46, type: 2}
   - {fileID: 11400000, guid: 3fd7bba1e5f28cf4eba357a0c884a9c6, type: 2}
   - {fileID: 11400000, guid: 729670c7d433bc74b91e8f920646cee2, type: 2}
+  - {fileID: 11400000, guid: ed2eb954eb7c59a41be36212d8b77d46, type: 2}
   - {fileID: 11400000, guid: 4b49d52095350304882c8513aaa14667, type: 2}
   currentTheme: {fileID: 0}
 --- !u!4 &1277934039
@@ -4380,12 +4454,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuUI
   panelInfo: {fileID: 851049071}
   panelSettings: {fileID: 1330261696}
-  toggleThemes:
-  - {fileID: 195413878}
-  - {fileID: 959121657}
-  - {fileID: 491002699}
-  - {fileID: 464782911}
-  selectedToggleTheme: {fileID: 491002699}
   textHeading: {fileID: 334997060}
   butInfo: {fileID: 936124787}
   butSettings: {fileID: 1131870820}

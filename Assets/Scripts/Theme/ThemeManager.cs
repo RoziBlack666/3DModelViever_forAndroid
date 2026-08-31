@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class ThemeManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class ThemeManager : MonoBehaviour
     [SerializeField] private ThemeData currentTheme;
 
     public ThemeData CurrentTheme => currentTheme;
+
+    public event Action<ThemeData> OnThemeChanged;
 
     private void Awake()
     {
@@ -40,6 +43,8 @@ public class ThemeManager : MonoBehaviour
         currentTheme = theme;
 
         SaveTheme();
+        //Говорим всем объектам сцены, что тема изменилась
+        OnThemeChanged?.Invoke(currentTheme); 
     }
 
     private void SaveTheme()

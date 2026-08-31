@@ -21,15 +21,36 @@ public class ThemeController : MonoBehaviour
 
     private void Start()
     {
+        if (ThemeManager.Instance == null)
+        {
+            Debug.LogWarning("ThemeController: ThemeManager не найден.");
+            return;
+        }
+
+        ThemeManager.Instance.OnThemeChanged += ApplyTheme;
+
         ApplyTheme();
+    }
+
+    private void OnDestroy()
+    {
+        if (ThemeManager.Instance != null)
+        {
+            ThemeManager.Instance.OnThemeChanged -= ApplyTheme;
+        }
     }
 
 
     public void ApplyTheme()
     {
-        if (CurrentTheme == null)
+        ApplyTheme(CurrentTheme);
+    }
+
+    public void ApplyTheme(ThemeData theme)
+    {
+        if (theme == null)
         {
-            Debug.LogWarning("ThemeController: текущая тема не задана.");
+            Debug.LogWarning("ThemeController: тема не задана.");
             return;
         }
 
@@ -38,10 +59,10 @@ public class ThemeController : MonoBehaviour
             if (element == null)
                 continue;
 
-            element.ApplyTheme(CurrentTheme);
+            element.ApplyTheme(theme);
         }
     }
-   
+
 
     public void ToggleButton(ThemeUIElement button)
     {

@@ -107,7 +107,15 @@ public class ThemeUIElement : MonoBehaviour
     public void SetButtonState(bool enabled, ThemeData theme)
     {
         isEnabled = enabled;
-        ApplyButtonState(theme);
+        if (enabled) 
+        { 
+            colorType = ThemeColorType.EnabledSmallButton;
+        }
+        else
+        {
+            colorType = ThemeColorType.DisabledSmallButton;
+        }
+            ApplyButtonState(theme);
     }
 
 

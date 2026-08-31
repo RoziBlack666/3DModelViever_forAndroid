@@ -2603,6 +2603,10 @@ MonoBehaviour:
   - {fileID: 1330261700}
   - {fileID: 1064058499}
   - {fileID: 638239635}
+  - {fileID: 2001298217}
+  - {fileID: 115939501}
+  - {fileID: 822429296}
+  - {fileID: 1872277633}
 --- !u!1 &936124787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,7 +3167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212c4da22458c174d815deeeeffe3ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThemeUIElement
-  colorType: 10
+  colorType: 6
   isEnabled: 0
 --- !u!1 &1092759601
 GameObject:

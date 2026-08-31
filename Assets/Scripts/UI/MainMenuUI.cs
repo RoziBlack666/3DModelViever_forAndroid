@@ -68,5 +68,5 @@ public class MainMenuUI : MonoBehaviour
     {
         return panelSettings.activeSelf;
     }
-    
+
 }

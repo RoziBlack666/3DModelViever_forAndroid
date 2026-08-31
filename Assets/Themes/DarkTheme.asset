@@ -17,7 +17,7 @@ MonoBehaviour:
   DisabledBut: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   EnabledBut: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   DisabledBitBut: {r: 0.03137255, g: 0.03137255, b: 0.03137255, a: 1}
-  EnabledBitBut: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  EnabledBitBut: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   ImageInMenuBase: {r: 0.2, g: 0.2, b: 0.2, a: 0.4}
   ImageInMenuForPanel: {r: 0.1, g: 0.1, b: 0.1, a: 0.2}
   ImageInGallery: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 0.4}

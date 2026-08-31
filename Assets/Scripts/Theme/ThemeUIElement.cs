@@ -150,4 +150,13 @@ public class ThemeUIElement : MonoBehaviour
     }
 
     public bool IsEnabled => isEnabled;
+
+
+    private void OnEnable()
+    {
+        if (ThemeManager.Instance != null)
+        {
+            ApplyTheme(ThemeManager.Instance.CurrentTheme);
+        }
+    }
 }
